@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>세션 선택 - switch문</title>
+	<link rel="stylesheet" href="css/switch.css">
+</head>
+<body>	
+	<script>
+		// Do it! switch문으로 조건 체크하기
+		let session = prompt("세션을 선택하세요: (1) JavaScript, (2) Python, (3) Java, (4) C++");
+
+		switch (session) {
+			case "1":
+				document.write("<p><strong>JavaScript</strong> 세션을 선택하셨습니다.</p>");
+				break;
+			case "2":
+				document.write("<p><strong>Python</strong> 세션을 선택하셨습니다.</p>");
+				break;
+			case "3":
+				document.write("<p><strong>Java</strong> 세션을 선택하셨습니다.</p>");
+				break;
+			case "4":
+				document.write("<p><strong>C++</strong> 세션을 선택하셨습니다.</p>");
+				break;
+			default:
+				document.write("<p>잘못된 선택입니다. 1에서 4 사이의 숫자를 입력하세요.</p>");
+		}
+
+	</script>
+</body>
+</html>

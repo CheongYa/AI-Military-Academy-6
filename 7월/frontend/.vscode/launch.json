@@ -1,0 +1,42 @@
+{
+    // IntelliSense를 사용하여 가능한 특성에 대해 알아보세요.
+    // 기존 특성에 대한 설명을 보려면 가리킵니다.
+    // 자세한 내용을 보려면 https://go.microsoft.com/fwlink/?linkid=830387을(를) 방문하세요.
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "chrome",
+            "request": "launch",
+            "name": "localhost에 대해 Chrome 시작",
+            "url": "http://localhost:8080",
+            "webRoot": "${workspaceFolder}"
+        },
+        {
+            "name": "SWA: Run ch01",
+            "request": "launch",
+            "type": "pwa-chrome",
+            "url": "http://localhost:4280",
+            "preLaunchTask": "swa: start ch01",
+            "webRoot": "${workspaceFolder}/ch01",
+            "timeout": 30000
+        },
+        {
+            "name": "SWA: Run ch01_self",
+            "request": "launch",
+            "type": "pwa-chrome",
+            "url": "http://localhost:4280",
+            "preLaunchTask": "swa: start ch01_self",
+            "webRoot": "${workspaceFolder}/ch01_self",
+            "timeout": 30000
+        },
+        {
+            "name": "SWA: Run my-app",
+            "request": "launch",
+            "type": "pwa-chrome",
+            "url": "http://localhost:4280",
+            "preLaunchTask": "swa: start my-app",
+            "webRoot": "${workspaceFolder}/my-app",
+            "timeout": 30000
+        }
+    ]
+}
