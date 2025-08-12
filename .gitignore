@@ -1,3 +1,4 @@
 # 디렉터리를 Git에서 제외
 install/
 reference/
+project_1/
